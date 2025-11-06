@@ -22,6 +22,19 @@ sudo apt update
 sudo apt install zotero
 ```
 
+#### Better BibTex for Zotero
+
+Install the Better BibTex Plugin for Zotero
+-  Zotero > Tool > Plugins
+
+
+#### Export citations.bib
+
+- Zotero > File > Export Library > Format: Better BibTeX
+- [ ] Keep Updated
+- [ ] Save to:  ~/Documents/Lib/Citations.bib
+- [ ] Symlink your ~/Documents/Lib/Citations.bib to beautiful-book-builder/lib/citations.bib
+
 #### Zotero Connector Browser Plugin
 
 - https://chromewebstore.google.com/detail/zotero-connector/ekhagklcjbdpajgpjgmbionohlpdbjgc

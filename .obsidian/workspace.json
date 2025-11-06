@@ -20,23 +20,8 @@
               "icon": "lucide-file",
               "title": "README"
             }
-          },
-          {
-            "id": "849ec88cd31ecf9d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "chapters/02_Chapter2.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "02_Chapter2"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -228,6 +213,16 @@
             "state": {
               "type": "mathpad-view",
               "state": {},
+              "icon": "lucide-ghost",
+              "title": "mathpad-view"
+            }
+          },
+          {
+            "id": "e9804fd12413705d",
+            "type": "leaf",
+            "state": {
+              "type": "mathpad-view",
+              "state": {},
               "icon": "sigma",
               "title": "Mathpad"
             }
@@ -237,8 +232,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -253,8 +247,10 @@
       "obsidian-kanban:Create new board": false
     }
   },
-  "active": "849ec88cd31ecf9d",
+  "active": "aea7b6310a1ff6ff",
   "lastOpenFiles": [
+    "lib/old-citations.bib",
+    "chapters/02_Chapter2.md",
     "build/b3.html",
     "build/b3.tex",
     "build/Paths-to-Perception.tex",
@@ -265,7 +261,6 @@
     "build/lib/mathjax/ui/lazy.js",
     "build/lib/mathjax/ui",
     "build/lib/mathjax/sre/mathmaps/sv.json",
-    "build/lib/mathjax/sre/mathmaps/nn.json",
     "build/lib/img/unit-circle-with-tau.png",
     "build/lib/img/unit-circle-with-pi.png.png",
     "build/lib/img/unit-circle-with-pi.png",
@@ -277,7 +272,6 @@
     "build/lib/img/Revolving_circles.480x480.png",
     "build/lib/img/Poo.png",
     "README.md",
-    "chapters/02_Chapter2.md",
     "chapters/00_Introduction.md",
     "chapters/01_Chapter1.md",
     "pm/Book Action Items.md",
