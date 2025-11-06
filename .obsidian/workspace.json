@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "chapters/00_Introduction.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "00_Introduction"
             }
           }
         ],
@@ -247,7 +247,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -264,13 +265,13 @@
   },
   "active": "09afe60c287c13ed",
   "lastOpenFiles": [
+    "README.md",
     "chapters/02_Chapter2.md",
     "build/b3.epub",
     "build/Paths-to-Perception.epub",
     "build/media",
     "chapters/Citations.md",
     "chapters/01_Chapter1.md",
-    "README.md",
     "chapters/00_Introduction.md",
     "chapters/Terminology.md",
     "lib/old-citations.bib",

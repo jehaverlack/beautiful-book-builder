@@ -114,6 +114,29 @@
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 \setcounter{secnumdepth}{5}
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newlength{\cslentryspacingunit} % times entry-spacing
+\setlength{\cslentryspacingunit}{\parskip}
+\newenvironment{CSLReferences}[2] % #1 hanging-ident, #2 entry spacing
+ {% don't indent paragraphs
+  \setlength{\parindent}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1
+  \let\oldpar\par
+  \def\par{\hangindent=\cslhangindent\oldpar}
+  \fi
+  % set entry spacing
+  \setlength{\parskip}{#2\cslentryspacingunit}
+ }%
+ {}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{#1\hfill\break}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{#1}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}\break}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
 \usepackage[most]{tcolorbox}
 \usepackage{graphicx}
 \tcbuselibrary{breakable}
@@ -179,6 +202,10 @@
 \mainmatter
 \hypertarget{introduction}{%
 \chapter{Introduction}\label{introduction}}
+
+This book builder template was currated by John
+Haverlack.(\protect\hyperlink{ref-JohnHaverlackACEP}{{``John {Haverlack}
+\textbar{} {ACEP}''} n.d.})
 
 \begin{quote}
 ``\emph{If I have seen further it is by standing on the shoulders of
@@ -790,7 +817,17 @@ Rν lP = (2.77455e-47)*sqrt(m^3/kg)
 \chapter{Terminology}\label{terminology}}
 
 \hypertarget{citations}{%
-\chapter{Citations}\label{citations}}
+\chapter*{Citations}\label{citations}}
+\addcontentsline{toc}{chapter}{Citations}
+
+\hypertarget{refs}{}
+\begin{CSLReferences}{1}{0}
+\leavevmode\vadjust pre{\hypertarget{ref-JohnHaverlackACEP}{}}%
+{``John {Haverlack} \textbar{} {ACEP}.''} n.d.
+https://www.uaf.edu/acep/about/our-team/john-haverlack.php. Accessed
+September 30, 2025.
+
+\end{CSLReferences}
 
 \backmatter
 \end{document}

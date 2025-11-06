@@ -1,5 +1,7 @@
 # Introduction
 
+This book builder template was currated by John Haverlack.[@JohnHaverlackACEP]
+
 
 > “*If I have seen further it is by standing on the shoulders of Giants.*”
 > 
