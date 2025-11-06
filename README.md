@@ -1,6 +1,49 @@
 # beautiful-book-builder
 
 This is a basic book builder template based on a Pandoc build process in conjunction with a number of other tools to generate PDF, ODT, HTML, LaTex, and Epub book formats from Markdown source content in an Obsidian vault.
+
+## Directory Structure
+
+```
+beautiful-book-builder/
+├── build  (Target Destination for Final Outputs)
+├── chapters (Input Content for the Book)
+├── conf  (Configuration for the Pandoc Builds)
+├── filters  (Filters to control document type formatting)
+├── lib  (Libaries for the Build Process)
+│   ├── citations
+│   ├── diag
+│   ├── img
+│   └── mathjax
+├─── scripts  (Future Setup Script)
+│   └── deps
+└── build.sh (Old Build Script, Depricated in favor of Make)
+```
+
+## Usage
+#### PDF
+
+```
+make pdf
+```
+#### HTML
+
+```
+make html
+```
+#### LaTex
+
+```
+make latex
+```
+#### EPub
+
+> Note:  This configuration still needs work.
+
+```
+make epub
+```
+
 ## Dependencies
 
 For Debian / ZorinOS and likely Ubuntu based systems.
