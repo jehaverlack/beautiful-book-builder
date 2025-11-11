@@ -1,6 +1,8 @@
 # Introduction
 
-This book builder template was currated by John Haverlack.[@JohnHaverlackACEP]
+This book builder template has been  curated by John Haverlack.[@JohnHaverlackACEP]
+
+
 
 
 > “*If I have seen further it is by standing on the shoulders of Giants.*”
@@ -32,3 +34,15 @@ Speculative Idea, that the author wonders about, but does not know how to demons
 > [!speculative] Speculative Concept
 With the speed of light, $c = 1$:
 $$E^2 = m_{0}^2 + p^2 $$
+
+Or Warnings...
+
+> [!caution] Caution Note
+> Beware of this section.
+
+> [!warning] Warning Note
+> Beware of this section.
+
+> [!danger] Alerts
+> Extreme Highlight
+

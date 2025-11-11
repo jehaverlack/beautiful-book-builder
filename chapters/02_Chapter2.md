@@ -36,6 +36,7 @@ $c = 299792458 \frac{m}{s} = 299792458 \frac{m}{s} \cdot 1.74542\times10^{34} \f
 | Unit Cycle                     | $\Theta$     | $2\pi = 6.28318...\ Radians$                                 | $1 \tau = 6.28318...\ Radians$ |
 
 ## Fine Structure Constant
+
 As a consistency check, we compute the _[Fine Structure Constant](https://en.wikipedia.org/wiki/Fine-structure_constant)_ using Reduced Natural Units which is a unit less ratio that should be independent of our system of units.
 
 $\huge{\alpha=\frac{e^2}{4\pi\epsilon_o\hbar c}=\frac{e^2}{2\tau}=0.00729735≈\frac{1}{137}}$
@@ -111,6 +112,7 @@ From this we can see that Energy, Momentum and Mass have equivalent units.
 > _While we do not really know what energy, mass and momentum are we know that they are fundamentally “made” out of the same stuff because they have the same units._
 
 ##### Objects of mass at rest
+
 For an object at rest with no momentum ($p = 0$) we see Einstein's famous equations:
 
 $E = m_{0} \cdot c^2$
@@ -118,7 +120,9 @@ $E = m_{0} \cdot c^2$
 Or, with $c=1$, this is much simpler to understand.  Energy = Mass
 
 $E = m_0$
+
 ##### Zero mass objects moving at the speed of light
+
 And for objects with no mass, like photos, ($m_{0}= 0$):
 
 $E=pc$

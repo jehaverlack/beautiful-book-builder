@@ -1,11 +1,11 @@
-# beautiful-book-builder
+# basic-book-builder (b3)
 
-This is a basic book builder template based on a Pandoc build process in conjunction with a number of other tools to generate PDF, ODT, HTML, LaTex, and Epub book formats from Markdown source content in an Obsidian vault.
+This is a basic book (article) builder template based on a Pandoc build process in conjunction with a number of other tools to generate PDF, ODT, HTML, LaTex, and Epub book formats from Markdown source content in an Obsidian vault.
 
 ## Directory Structure
 
 ```
-beautiful-book-builder/
+basic-book-builder/
 ├── build  (Target Destination for Final Outputs)
 ├── chapters (Input Content for the Book)
 ├── conf  (Configuration for the Pandoc Builds)
@@ -76,7 +76,7 @@ Install the Better BibTex Plugin for Zotero
 - Zotero > File > Export Library > Format: Better BibTeX
 - [ ] Keep Updated
 - [ ] Save to:  ~/Documents/Lib/Citations.bib
-- [ ] Symlink your ~/Documents/Lib/Citations.bib to beautiful-book-builder/lib/citations.bib
+- [ ] Symlink your ~/Documents/Lib/Citations.bib to basic-book-builder/lib/citations.bib
 
 #### Zotero Connector Browser Plugin
 
@@ -104,6 +104,14 @@ sudo apt install https://github.com/jgm/pandoc/releases/download/3.8.2.1/pandoc-
 ```
 sudo apt install make
 ```
+
+#### jq and yq
+
+```
+sudo apt install jq yq
+```
+
+
 #### texlive
 
 ```
@@ -188,7 +196,7 @@ There are 2 Version of the FrontMatter for PDF, and HTML bases formats that set 
 
 ### Editing Content
 
-To edit the book open the `beautiful-book-builder` directory as an Obsidian Vault.
+To edit the book open the `basic-book-builder` directory as an Obsidian Vault.
 
 - Edit the Markdown content in the `chapters` directory.
 

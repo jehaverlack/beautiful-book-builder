@@ -79,7 +79,10 @@ ul, ol {
 
 .callout-established,
 .callout-proposed,
-.callout-speculative {
+.callout-speculative,
+.callout-caution,
+.callout-warning,
+.callout-danger {
   border-radius: 6px;
   padding: 5px;  /* internal padding */
   margin-top: 5px;     /* external spacing tightened */
@@ -91,7 +94,10 @@ ul, ol {
 /* Title line */
 .callout-established p:first-child strong,
 .callout-proposed p:first-child strong,
-.callout-speculative p:first-child strong {
+.callout-speculative p:first-child strong,
+.callout-caution p:first-child strong,
+.callout-warning p:first-child strong,
+.callout-danger p:first-child strong {
   display: block;
   font-family: "Libertinus Sans", sans-serif;
   font-weight: 600;
@@ -102,7 +108,10 @@ ul, ol {
 /* Paragraphs inside callouts */
 .callout-established p,
 .callout-proposed p,
-.callout-speculative p {
+.callout-speculative p,
+.callout-caution p,
+.callout-warning p,
+.callout-danger p {
   margin-top: 5px;
   margin-bottom: 5px;
   line-height: 1.45;  /* slightly condensed text spacing */
@@ -111,19 +120,28 @@ ul, ol {
 /* Remove top margin on first paragraph, bottom on last */
 .callout-established p:first-child,
 .callout-proposed p:first-child,
-.callout-speculative p:first-child {
+.callout-speculative p:first-child,
+.callout-caution p:first-child,
+.callout-warning p:first-,
+.callout-danger p:first-child {
   margin-top: 0;
 }
 .callout-established p:last-child,
 .callout-proposed p:last-child,
-.callout-speculative p:last-child {
+.callout-speculative p:last-child,
+.callout-caution p:last-child,
+.callout-warning p:last-child,
+.callout-danger p:last-child {
   margin-bottom: 0;
 }
 
 /* Math inside callouts */
 .callout-established .math.display,
 .callout-proposed .math.display,
-.callout-speculative .math.display {
+.callout-speculative .math.display, 
+.callout-caution .math.display,
+.callout-warning .math.display,
+.callout-danger .math.display {
   margin: 0.4em 0;
 }
 
@@ -141,6 +159,20 @@ ul, ol {
   border-left-color: #8b2be2;
 }
 
+.callout-caution {
+  background: #fff0e8;
+  border-left-color: #f5a22f;
+}
+
+.callout-warning {
+  background: #fff0e8;
+  border-left-color: #f5a22f;
+}
+
+.callout-danger {
+  background: #ffe8e8;
+  border-left-color: #d83b3a;
+}
 
 /* ------------------------------
    Images (in body content)
@@ -182,4 +214,31 @@ code {
   padding: 0.1em 0.3em;
   border-radius: 4px;
   font-size: 0.95em;
+}
+
+/* Force all header cells to left-align their text */
+table thead th {
+  text-align: left !important;
+  vertical-align: bottom;  /* optional: aligns nicely with text baseline */
+  padding: 4px 8px;        /* optional: consistent spacing */
+}
+
+/* Make data cells match if you want consistent left alignment */
+table tbody td {
+  text-align: left;
+  padding: 4px 8px;
+}
+
+/* Optional: keep math inline nicely aligned */
+table td .math,
+table th .math {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+/* Optional: make math display nicely aligned */
+table td .math.display,
+table th .math.display {
+  display: block;
+  margin: 0.4em 0;
 }

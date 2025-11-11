@@ -1,46 +1,81 @@
+\usepackage{etoolbox}
 \usepackage[most]{tcolorbox}
 \usepackage{graphicx}
+\usepackage{xparse}
 \tcbuselibrary{breakable}
+
+\definecolor{speculativeback}{RGB}{247,232,255}  % #f7e8ff
+\definecolor{speculativeframe}{RGB}{139,43,226}  % #8b2be2
+
+% Helper to show a blank title if empty
+\newcommand{\blanktitle}{\mbox{}}
 
 % =========================================================
 % Concept Boxes
 % =========================================================
-\newtcolorbox{proposedbox}{
-  title=Proposed Concept,
+\newtcolorbox{proposedbox}[1][Proposed Concept]{%
+  title=\ifstrempty{#1}{\blanktitle}{#1},
   colback=blue!5!white,
   colframe=blue!75!black,
   colbacktitle=blue!15!white,
   fonttitle=\bfseries,
   coltitle=black,
-  enhanced,
-  sharp corners,
-  breakable,
-  after = \par\vspace{6pt}
+  enhanced, sharp corners, breakable,
+  after=\par\vspace{6pt}
 }
 
-\newtcolorbox{establishedbox}{
-  title=Established Concept,
+\newtcolorbox{establishedbox}[1][Established Concept]{%
+  title=\ifstrempty{#1}{\blanktitle}{#1},
   colback=green!5!white,
   colframe=green!75!black,
   colbacktitle=green!15!white,
   fonttitle=\bfseries,
   coltitle=black,
-  enhanced,
-  sharp corners,
-  breakable,
-  after = \par\vspace{6pt}
+  enhanced, sharp corners, breakable,
+  after=\par\vspace{6pt}
 }
 
-\newtcolorbox{speculativebox}{
-  title=Speculative Concept,
-  colback=purple!5!white,
-  colframe=purple!75!black,
-  colbacktitle=purple!15!white,
+\newtcolorbox{speculativebox}[1][Speculative Concept]{%
+  title=\ifstrempty{#1}{\blanktitle}{#1},
+  colback=speculativeback,
+  colframe=speculativeframe,
+  colbacktitle=speculativeback!80!white, % lighter variant for title bar
   fonttitle=\bfseries,
   coltitle=black,
-  enhanced,
-  sharp corners,
-  breakable,
-  after = \par\vspace{6pt}
+  enhanced, sharp corners, breakable,
+  after=\par\vspace{6pt}
 }
 
+
+\newtcolorbox{cautionbox}[1][Caution]{%
+  title=\ifstrempty{#1}{\blanktitle}{#1},
+  colback=orange!5!white,
+  colframe=orange!75!black,
+  colbacktitle=orange!15!white,
+  fonttitle=\bfseries,
+  coltitle=black,
+  enhanced, sharp corners, breakable,
+  after=\par\vspace{6pt}
+}
+
+\newtcolorbox{warningbox}[1][Warning]{%
+  title=\ifstrempty{#1}{\blanktitle}{#1},
+  colback=orange!5!white,
+  colframe=orange!75!black,
+  colbacktitle=orange!15!white,
+  fonttitle=\bfseries,
+  coltitle=black,
+  enhanced, sharp corners, breakable,
+  after=\par\vspace{6pt}
+}
+
+\newtcolorbox{dangerbox}[1][Danger]{%
+  title=\ifstrempty{#1}{\blanktitle}{#1},
+  colback=red!5!white,
+  colframe=red!75!black,
+  colbacktitle=red!15!white,
+  fonttitle=\bfseries,
+  coltitle=black,
+  enhanced, sharp corners, breakable,
+  after=\par\vspace{6pt}
+}

@@ -18,7 +18,8 @@ metadata:
   link-citations: true
 
 variables:
-  documentclass: book
+  documentclass: article  # set to "article" or "book"
+  suppress-chapter: true
   fontsize: 12pt
   geometry:
     - margin=1in
