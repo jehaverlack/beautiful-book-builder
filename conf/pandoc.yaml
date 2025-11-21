@@ -29,10 +29,15 @@ variables:
   numbersections: true       # ✅ correct key (not number-sections)
   colorlinks: true           # nice PDF hyperlinks
   linkcolor: blue
+  graphics: true
+  float: false
+  figure-latex-placement: H
+  # suppress-chapter: true
 
 resource-path:
   - .
   - lib/img
+  - lib/diag
 
 citeproc: true
 bibliography: lib/zotero.bib
